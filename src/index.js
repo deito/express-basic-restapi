@@ -13,6 +13,7 @@ app.use(express.json());
 
 // routes
 app.use(require('./routes'));
+app.use('/holamundo', require('./routes/holamundo'));
 app.use('/api/movies', require('./routes/movies'));
 app.use('/api/users', require('./routes/users'));
 
